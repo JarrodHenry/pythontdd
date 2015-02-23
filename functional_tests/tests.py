@@ -65,7 +65,7 @@ class NewVisitorTest(LiveServerTestCase):
         ## of Edith's is coming through from cookies etc
 
         self.browser.quit()
-        self.browser.webdriver.Firefox()
+        self.browser=webdriver.Firefox()
 
         # Francis visits the home page.  There is no sign of Edith's
         # list
