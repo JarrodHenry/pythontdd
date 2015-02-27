@@ -23,3 +23,6 @@ class ItemForm(forms.models.ModelForm):
             'text': {'required': EMPTY_LIST_ERROR}
             }
         
+    def save(self, for_list):
+        self.instance.list  = for_list
+        return super().save()
